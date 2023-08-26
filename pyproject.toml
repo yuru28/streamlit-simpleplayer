@@ -8,6 +8,7 @@ packages = [{include = "streamlit_simpleplayer"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+streamlit = "^1.26.0"
 
 
 [build-system]
