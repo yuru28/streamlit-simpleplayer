@@ -28,3 +28,5 @@ if option:
     src_url = f'https://www.art19.com/shows/{show_id}/episodes/{option}/embed?type=micro&download-enabled=0'
     components.iframe(src_url, scrolling=False, height=42)
     st.markdown(episode['content'])
+
+st.info('src is here: https://github.com/yuru28/streamlit-simpleplayer')
