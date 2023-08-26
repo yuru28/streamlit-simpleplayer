@@ -1,10 +1,16 @@
+import os
 from datetime import datetime
 
 import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as components
 
-from streamlit_simpleplayer.lib import load_data
+
+@st.cache_data
+def load_data() -> pd.DataFrame:
+    path = os.path.join(os.getcwd(), 'data', 'episodes.csv')
+    return pd.read_csv(path)
+
 
 episodes_df = load_data()
 episodes_df['published_at'] = pd.to_datetime(episodes_df['published_at'])
