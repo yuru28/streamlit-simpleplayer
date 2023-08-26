@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "streamlit-simpleplayer"
+version = "0.1.0"
+description = ""
+authors = ["Takuya Mukohira <takuya.mk96@gmail.com>"]
+readme = "README.md"
+packages = [{include = "streamlit_simpleplayer"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
