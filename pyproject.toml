@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "streamlit_simpleplayer"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 streamlit = "^1.26.0"
 
 
